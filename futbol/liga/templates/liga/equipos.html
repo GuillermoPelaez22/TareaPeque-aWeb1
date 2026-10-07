@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipos</title>
+</head>
+<body>
+    <h1>Equipos de fútbol</h1>
+
+    {% for equipo in equipos %}
+        <h2>{{ equipo.nombre }}</h2>
+        <p>Ciudad: {{ equipo.ciudad }}</p>
+        <p>Estadio: {{ equipo.estadio }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
